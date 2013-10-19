@@ -13,7 +13,7 @@ private:
            m_columns;
 
 public:
-    configuration(T *C,
+    configuration(T C[],
                   size_t _rows,
                   size_t _columns);
 

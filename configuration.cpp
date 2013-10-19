@@ -1,6 +1,6 @@
 #include "configuration.h"
 
-configuration::configuration(T *C,
+configuration::configuration(T C[],
                              size_t _rows,
                              size_t _columns) :
     m_elems(NULL),
@@ -11,7 +11,7 @@ configuration::configuration(T *C,
     m_elems = new T[size];
 
     for(size_t i = 0; i < size ; ++i)
-        m_elems[size] = C[size];
+        m_elems[i] = C[i];
 }
 
 configuration::~configuration() {
